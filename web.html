@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanz kang web</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden;
+      font-family: sans-serif;
+      color: white;
+    }
+    body {
+      background: url('https://fastrestapis.fasturl.cloud/file/v2/5fxP2rU.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+    .container {
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      z-index: 2;
+    }
+    .intro-flash {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: black;
+      color: lime;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      z-index: 999;
+      animation: fadeOut 3s forwards;
+    }
+    @keyframes fadeOut {
+      0% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { opacity: 0; visibility: hidden; }
+    }
+    .section {
+      margin: 30px auto;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      width: 80%;
+      max-width: 400px;
+    }
+    .wa-button, .game-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .game-button {
+      background: #03a9f4;
+    }
+    .owner-img {
+      width: 200px;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+    .music-controls button {
+      background: #222;
+      border: 2px solid #00ffe5;
+      color: #00ffe5;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .music-controls button:hover {
+      background: #00ffe5;
+      color: #000;
+      box-shadow: 0 0 10px #00ffe5;
+    }
+    .snowflake {
+      position: fixed;
+      top: -2em;
+      color: white;
+      font-size: 24px;
+      animation: fall linear infinite;
+      user-select: none;
+      pointer-events: none;
+      z-index: 1;
+      filter: drop-shadow(0 0 5px white);
+    }
+    @keyframes fall {
+      to {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0.8;
+      }
+    }
+    canvas#stars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      z-index: 1000;
+    }
+    .whatsapp-btn:hover {
+      transform: translateX(-50%) scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    }
+    .wa-icon {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="intro-flash"> Sanz kang web Loading...😋</div>
+
+  <audio id="bg-music" loop>
+    <source src="https://fastrestapis.fasturl.cloud/file/v2/LahO4vk.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+    <h1 style="margin-top: 20px; font-size: 2em; text-shadow: 0 0 10px cyan;">Sanz kang web</h1>
+    <p>Selamat datang di Sanz kang web, disini kami menyediakan jasa pembuatan web html dan lain-lain.</p>
+
+    <img src="https://fastrestapis.fasturl.cloud/file/v2/5fxP2rU.jpg" alt="Owner" class="owner-img" />
+
+    <div class="music-controls">
+      <button onclick="document.getElementById('bg-music').play()">🥵Play bang</button>
+      <button onclick="document.getElementById('bg-music').pause()">Stop bang🤓</button>
+    </div>
+
+    <div class="section" style="background: url('https://fastrestapis.fasturl.cloud/file/v2/5fxP2rU.jpg') no-repeat center center / cover; background-blend-mode: overlay; background-color: rgba(0, 0, 0, 0.7);">
+      <h2>Harga pembuatan web bolo</h2>
+      <p><strong>Paket Lite:</strong> RP.15.000</p>
+      <a href="https://wa.me/6285802833807?text=Bang%20mau%20beli%20paket%20Lite" class="game-button" target="_blank"> paket lite 15.000</a>
+      <p><strong>Paket Pro:</strong> RP.20.000</p>
+      <a href="https://wa.me/6285802833807?text=Bang%20mau%20beli%20paket%20Lite" class="game-button" target="_blank"</a> Paket Pro RP. 20.000 </a>
+      <p><strong>Paket :</strong> RP30.000 / </p>
+      <a href="https://wa.me/6285802833807?text=Bang%20mau%20beli%20paket%20Lite" class="game-button" target="_blank">Paket Ultimate RP.30.000</a>
+    </div>
+
+
+  <!-- Tombol WhatsApp -->
+  <a href="https://wa.me/6285802833807" class="whatsapp-btn" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="wa-icon">
+    <span>Sanz ganteng</span>
+  </a>
+
+  <script>
+    function createSnowflake() {
+      const snowflake = document.createElement("div");
+      snowflake.classList.add("snowflake");
+      snowflake.textContent = "🥶";
+      snowflake.style.left = Math.random() * window.innerWidth + "px";
+      snowflake.style.animationDuration = (Math.random() * 5 + 5) + "s";
+      snowflake.style.fontSize = (Math.random() * 10 + 15) + "px";
+      snowflake.style.opacity = Math.random();
+      document.body.appendChild(snowflake);
+      setTimeout(() => snowflake.remove(), 10000);
+    }
+    setInterval(createSnowflake, 200);
+  </script>
+
+  <canvas id="stars"></canvas>
+  <script>
+    const starCanvas = document.getElementById("stars");
+    const starCtx = starCanvas.getContext("2d");
+    let w = starCanvas.width = window.innerWidth;
+    let h = starCanvas.height = window.innerHeight;
+
+    const stars = [];
+    for (let i = 0; i < 80; i++) {
+      stars.push({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        r: Math.random() * 1.2 + 0.5,
+        opacity: Math.random(),
+        speed: Math.random() * 0.02 + 0.005
+      });
+    }
+
+    function drawStars() {
+      starCtx.clearRect(0, 0, w, h);
+      stars.forEach(s => {
+        s.opacity += s.speed;
+        if (s.opacity > 1 || s.opacity < 0) s.speed = -s.speed;
+
+        starCtx.beginPath();
+        starCtx.globalAlpha = s.opacity;
+        starCtx.fillStyle = "#0000";
+        starCtx.arc(s.x, s.y, s.r, 0, Math.PI * 2, true);
+        starCtx.fill();
+        starCtx.closePath();
+      });
+
+      starCtx.globalAlpha = 1.0;
+      requestAnimationFrame(drawStars);
+    }
+
+    window.addEventListener("resize", () => {
+      w = starCanvas.width = window.innerWidth;
+      h = starCanvas.height = window.innerHeight;
+    });
+
+    drawStars();
+  </script>
+
+  <script>
+    window.onload = () => {
+      const audio = document.getElementById('bg-music');
+      audio.play().catch(() => {});
+    };
+  </script>
+</body>
+</html>
